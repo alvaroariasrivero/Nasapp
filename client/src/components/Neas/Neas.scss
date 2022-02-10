@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+
+form{
+    margin-top: $spacing-md;
+    display: flex;
+    flex-direction: column;
+}
+
+form > div{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin: 0.25rem auto;
+}
+
+form > input[type="submit"]{
+    width: 6.4rem;
+    margin: $spacing-sm auto;
+    color: $title-color;
+    background-color: $bg-menu;
+    background: $bg-gradient;
+    border-radius: 5px;
+    border: none;
+    padding: $spacing-sm 0;
+    cursor: pointer;
+}
+
+input[type="text"]{
+    width: 50%;
+}
+
+label{
+    padding: 0.063rem;
+    width: 50%;
+}
+
+.scroll{
+    border-radius: 100%;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #D4C9F5;
+    background-color: $bg-card;
+    position: fixed;
+    bottom: 1.5rem;
+    right: $spacing-sm;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: $spacing-sm auto;
+}
+
+@media only screen and (max-width: 426px){
+
+    form > div{
+        width: 80%;
+    }
+}
