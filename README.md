@@ -1,7 +1,7 @@
-1.Importar landings.json y neas.json a una BBDD de Mongo llamada Nasapp, las colecciones se llamarán landings y neas
+#Nasapp
 
-2.npm i
+MERN project with Leaflet library: asteroid data search (landings & neas) by different features.
 
-3.Ejecutar el archivo utils/toNumber
+Try class l5 in landigns searching or apollo orbit class in neas.
 
-4.npm start
+https://salty-meadow-61411.herokuapp.com/landings
