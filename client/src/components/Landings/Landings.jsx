@@ -15,7 +15,7 @@ const Landings = () => {
     async function fetchLanding(){
       if(select){
         try {
-          const res = await axios.get(`http://localhost:5000/api/astronomy/landings/${select}/${value}`)
+          const res = await axios.get(`/api/astronomy/landings/${select}/${value}`)
           const json = res.data
           //Antes de hacer el map hacemos un filter para sacar de la petición http los elementos a los que les faltan campos
           const landingArray = json.filter(element => {

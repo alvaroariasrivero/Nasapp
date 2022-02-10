@@ -14,7 +14,7 @@ const Neas = () => {
   useEffect(() => {
     async function fetchNeas(){
       try {
-        const res = await axios.get(`http://localhost:5000/api/astronomy/neas?class=${orbit}&from=${from}&to=${to}`)
+        const res = await axios.get(`/api/astronomy/neas?class=${orbit}&from=${from}&to=${to}`)
         const json = res.data;
         const neasArray = json.map(element => {
           return {
